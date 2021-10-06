@@ -19,6 +19,7 @@ alias hg="cd /Users/siddarthchalla/Desktop/coding_projects/healthy_gamer/healthy
 #alias dt="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/dt"
 
 alias bp="vim ~/.bash_profile"
+alias bc="vim ~/.bashrc"
 alias vimrc="vim ~/.vimrc"
 
 alias v="vim;nvm use 8"
@@ -57,7 +58,7 @@ swp_delete(){
 }
 
 src(){
-  source ~/.bash_profile
+  source ~/.bashrc
 }
 
 alias load_fixtures="RAILS_ENV=test rails db:fixtures:load"
