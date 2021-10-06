@@ -14,7 +14,8 @@ alias migrations="cd /Users/siddarthchalla/Desktop/coding_projects/migrations"
 alias community="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/community"
 alias pizza="cd /Users/siddarthchalla/Desktop/coding_projects/other/free-pizza-rails"
 alias code="cd /Users/siddarthchalla/Desktop/coding_projects"
-alias hg="cd /Users/siddarthchalla/Desktop/coding_projects/healthy_gamer/healthygamer-admin"
+
+alias wp="cd ~/workspace"
 
 #alias dt="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/dt"
 
