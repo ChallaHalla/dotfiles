@@ -2,7 +2,7 @@
 syntax enable
 " colorscheme afterglow
 
-set background=dark
+"set background=dark
 
 function! Smart_TabComplete()
   let line = getline('.')                         " current line
@@ -26,14 +26,14 @@ function! Smart_TabComplete()
 endfunction
 inoremap <leader><tab> <c-r>=Smart_TabComplete()<CR>
 
-let g:ackprg = 'ag --nogroup --nocolor --column'
+let g:ackprg = 'ag --nogroup --column'
 " The Silver Searcher
 if executable('ag')
   " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
+  set grepprg=ag\ --nogroup
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_user_command = 'ag %s -l -g ""'
 
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
@@ -72,10 +72,12 @@ let g:ale_fix_on_save = 1
 
 execute pathogen#infect()
 
-colorscheme gruvbox
+"colorscheme gruvbox
+"colorscheme afterglow
+colorscheme dracula
 
-let g:gruvbox_termcolors = '256'
-let g:gruvbox_contrast_dark = 'hard'
+"let g:gruvbox_termcolors = '256'
+"let g:gruvbox_contrast_dark = 'hard'
 
 set shell=/bin/bash
 set path=$PWD/**
@@ -199,3 +201,12 @@ xnoremap <c-k> 5k
 "dont scan included files for auto complete
 set complete-=i
 
+autocmd Filetype gitcommit setlocal spell
+
+set number
+
+set showcmd
+
+set cursorline
+
+set termguicolors
