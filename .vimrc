@@ -2,7 +2,7 @@
 syntax enable
 " colorscheme afterglow
 
-"set background=dark
+set background=dark
 
 function! Smart_TabComplete()
   let line = getline('.')                         " current line
@@ -26,14 +26,16 @@ function! Smart_TabComplete()
 endfunction
 inoremap <leader><tab> <c-r>=Smart_TabComplete()<CR>
 
-let g:ackprg = 'ag --nogroup --column'
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " The Silver Searcher
 if executable('ag')
   " Use ag over grep
-  set grepprg=ag\ --nogroup
+  set grepprg=ag\ --nogroup\ --nocolor
+
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l -g ""'
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
@@ -72,9 +74,9 @@ let g:ale_fix_on_save = 1
 
 execute pathogen#infect()
 
-"colorscheme gruvbox
+colorscheme gruvbox
 "colorscheme afterglow
-colorscheme dracula
+"colorscheme dracula
 
 "let g:gruvbox_termcolors = '256'
 "let g:gruvbox_contrast_dark = 'hard'
@@ -106,6 +108,8 @@ map <C-c> :NERDTreeFind<CR>
 map <C-x> :ImportJSWord<CR>
 map W :w<CR>
 map X :x<CR>
+map Q :q<CR>
+map V :visual<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -138,6 +142,12 @@ nnoremap <C-t>     :tabnew<CR>
 inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
+
+"resizing windows
+"
+"nnoremap <C-+> <Esc>:resize 60<CR>
+map <C-_> execute "normal! resize 20 <esc>`q"
+
 
 "Copy to system clipboard
 noremap Y "*y
@@ -208,5 +218,6 @@ set number
 set showcmd
 
 set cursorline
+"set cursorcolumn
 
 set termguicolors

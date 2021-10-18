@@ -14,6 +14,7 @@ alias migrations="cd /Users/siddarthchalla/Desktop/coding_projects/migrations"
 alias community="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/community"
 alias pizza="cd /Users/siddarthchalla/Desktop/coding_projects/other/free-pizza-rails"
 alias code="cd /Users/siddarthchalla/Desktop/coding_projects"
+alias shopify="cd /Users/siddarthchalla/Desktop/coding_projects/shopify"
 
 alias wp="cd ~/workspace"
 
@@ -28,6 +29,7 @@ alias v="vim;nvm use 8"
 alias gs="git status"
 alias gb="git branch"
 alias gp="git pull"
+alias gmm="git pull origin master"
 alias gpush="git push"
 alias gc="git commit"
 alias gch="git checkout"
@@ -80,3 +82,5 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 
 alias sub_update="git submodule update --init --recursive"
 alias clean_merged_branches="git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d"
+
+export PS1="\@"::$PS1
