@@ -172,6 +172,7 @@ nmap <C-ScrollWheelLeft> <nop>
 nmap <ScrollWheelRight> <nop>
 nmap <S-ScrollWheelRight> <nop>
 nmap <C-ScrollWheelRight> <nop>
+nmap <Space> <c-w>
 
 imap <ScrollWheelUp> <nop>
 imap <S-ScrollWheelUp> <nop>
@@ -185,6 +186,7 @@ imap <C-ScrollWheelLeft> <nop>
 imap <ScrollWheelRight> <nop>
 imap <S-ScrollWheelRight> <nop>
 imap <C-ScrollWheelRight> <nop>
+imap ;; <Esc>
 
 vmap <ScrollWheelUp> <nop>
 vmap <S-ScrollWheelUp> <nop>
@@ -198,6 +200,8 @@ vmap <C-ScrollWheelLeft> <nop>
 vmap <ScrollWheelRight> <nop>
 vmap <S-ScrollWheelRight> <nop>
 vmap <C-ScrollWheelRight> <nop>
+vmap <Space> <c-w>
+
 "
 " normal mode:
 nnoremap <c-j> 5j
