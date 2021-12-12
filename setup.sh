@@ -1,4 +1,4 @@
-WORKSPACE="$HOME/workspace"
+WORKSPACE="$HOME/dotfiles"
 
 ln -s $WORKSPACE/.vimrc $HOME/.vimrc
 ln -s $WORKSPACE/.vim $HOME/.vim
