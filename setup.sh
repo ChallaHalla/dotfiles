@@ -3,6 +3,7 @@ if [ "$SPIN" ]; then
   #Ensure vim command links to basic vim
   sudo rm /etc/alternatives/vim
   sudo ln -s /usr/bin/vim.basic /etc/alternatives/vim
+  rm $HOME/.zshrc
 fi
 
 ln -s $WORKSPACE/.vimrc $HOME/.vimrc
