@@ -1,3 +1,6 @@
-[submodule ".vim/bundle/dracula"]
-	path = .vim/bundle/dracula
-	url = git@github.com:dracula/vim.git
+[submodule ".vim/bundle/ale"]
+	path = .vim/bundle/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/preservim/nerdtree.git
