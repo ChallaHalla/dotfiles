@@ -10,6 +10,6 @@
  [submodule ".vim/bundle/gruvbox"]
    path = .vim/bundle/gruvbox
    url = https://github.com/morhetz/gruvbox.git
-[submodule ".vim/pack/tpope/start"]
-   path = .vim/pack/tpope/start
-   url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/surround"]
+	path = .vim/bundle/surround
+	url = http://github.com/tpope/vim-surround
