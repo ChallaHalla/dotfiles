@@ -16,7 +16,7 @@ alias pizza="cd /Users/siddarthchalla/Desktop/coding_projects/other/free-pizza-r
 alias code="cd /Users/siddarthchalla/Desktop/coding_projects"
 alias shopify="cd /Users/siddarthchalla/Desktop/coding_projects/shopify"
 
-alias wp="cd ~/workspace"
+alias wp="cd ~/dotfiles"
 
 #alias dt="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/dt"
 
