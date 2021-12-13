@@ -80,6 +80,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 #this is to make sure the rbenv works
 export PATH="$HOME/.rbenv/shims:$PATH"
 
+#make sure brew works
+export PATH="/opt/homebrew/bin/:$PATH"
+
 alias sub_update="git submodule update --init --recursive"
 alias clean_merged_branches="git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d"
 
