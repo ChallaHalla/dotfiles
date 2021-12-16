@@ -1,4 +1,6 @@
-eval "$(rbenv init -)"
+if [ "!$SPIN" ]; then
+  eval "$(rbenv init -)"
+fi
 
 alias web="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/web"
 alias fe="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/frontend"
