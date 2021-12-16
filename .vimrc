@@ -1,4 +1,5 @@
 :filetype plugin on
+
 syntax enable
 " colorscheme afterglow
 
@@ -75,11 +76,6 @@ let g:ale_fix_on_save = 1
 execute pathogen#infect()
 
 colorscheme gruvbox
-"colorscheme afterglow
-"colorscheme dracula
-
-"let g:gruvbox_termcolors = '256'
-"let g:gruvbox_contrast_dark = 'hard'
 
 set shell=/bin/bash
 set path=$PWD/**
@@ -221,7 +217,5 @@ set number
 
 set showcmd
 
+"Highlight current line
 set cursorline
-"set cursorcolumn
-
-set termguicolors
