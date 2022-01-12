@@ -2,12 +2,12 @@ if [ "!$SPIN" ]; then
   eval "$(rbenv init -)"
 fi
 
-alias web="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/web"
-alias fe="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/frontend"
-alias api="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/api"
-alias cli="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/dt-cli"
-alias dtgem="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/dt"
-alias tenon="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/tenon"
+alias web="cd /Users/siddarthchalla/repos/dt_repos/web"
+alias api="cd /Users/siddarthchalla/repos/dt_repos/api"
+alias fe="cd /Users/siddarthchalla/repos/dt_repos/frontend"
+alias cli="cd /Users/siddarthchalla/repos/dt_repos/dt-cli"
+alias dtgem="cd /Users/siddarthchalla/repos/dt"
+alias tenon="cd /Users/siddarthchalla/repos/tenon"
 
 alias mig="cd /Users/siddarthchalla/Desktop/coding_projects/migrations"
 alias migration="cd /Users/siddarthchalla/Desktop/coding_projects/migrations"
@@ -89,3 +89,5 @@ alias sub_update="git submodule update --init --recursive"
 alias clean_merged_branches="git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d"
 
 export PS1="\@"::$PS1
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

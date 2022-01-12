@@ -219,3 +219,5 @@ set showcmd
 
 "Highlight current line
 set cursorline
+
+set rtp+=/usr/local/opt/fzf
