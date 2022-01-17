@@ -1,12 +1,8 @@
-if [ "!$SPIN" ]; then
-  eval "$(rbenv init -)"
-fi
-
 alias web="cd /Users/siddarthchalla/repos/dt_repos/web"
 alias api="cd /Users/siddarthchalla/repos/dt_repos/api"
 alias fe="cd /Users/siddarthchalla/repos/dt_repos/frontend"
 alias cli="cd /Users/siddarthchalla/repos/dt_repos/dt-cli"
-alias dtgem="cd /Users/siddarthchalla/repos/dt"
+alias dtgem="cd /Users/siddarthchalla/repos/dt_repos/dt"
 alias tenon="cd /Users/siddarthchalla/repos/tenon"
 
 alias mig="cd /Users/siddarthchalla/Desktop/coding_projects/migrations"
@@ -66,6 +62,22 @@ src(){
   source ~/.bashrc
 }
 
+checkout_master(){
+  web
+  gch master
+  gp
+  api
+  gch master
+  gp
+  fe
+  gch master
+  gp
+  dtgem
+  gch master
+  gp
+  api
+}
+
 alias load_fixtures="RAILS_ENV=test rails db:fixtures:load"
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
@@ -89,5 +101,8 @@ alias sub_update="git submodule update --init --recursive"
 alias clean_merged_branches="git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d"
 
 export PS1="\@"::$PS1
+export AWS_REGION="us-east-1"
+export AWS_DEFAULT_PROFILE="sid"
 
+chruby ruby-2.7.5
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

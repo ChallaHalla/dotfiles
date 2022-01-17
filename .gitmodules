@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/fzf.vim"]
 	path = .vim/bundle/fzf
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule ".vim/bundle/vim-rooter.git"]
+	path = .vim/bundle/vim-rooter
+	url = https://github.com/airblade/vim-rooter.git
