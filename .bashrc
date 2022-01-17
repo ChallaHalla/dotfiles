@@ -104,5 +104,7 @@ export PS1="\@"::$PS1
 export AWS_REGION="us-east-1"
 export AWS_DEFAULT_PROFILE="sid"
 
+[[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
 chruby ruby-2.7.5
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
