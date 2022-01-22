@@ -2,6 +2,7 @@
 
 syntax enable
 " colorscheme afterglow
+set re=0
 
 set background=dark
 
