@@ -12,5 +12,5 @@ ln -s $WORKSPACE/.bashrc $HOME/.bashrc
 ln -s $WORKSPACE/.zshrc $HOME/.zshrc
 ln -s $WORKSPACE/.bash_profile $HOME/.bash_profile
 
-git submodule update --init --recursive
+git submodule update --force --recursive --init --remote
 git pull --recurse-submodules
