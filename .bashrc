@@ -112,10 +112,11 @@ export AWS_REGION="us-east-1"
 export AWS_DEFAULT_PROFILE="sid"
 export GIT_EDITOR=vim
 
-[[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
 
 if [ "!$SPIN" ]; then 
+  [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
   chruby ruby-2.7.5
+
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
