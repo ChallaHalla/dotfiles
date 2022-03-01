@@ -1,3 +1,4 @@
 *.sw[klmnop]
 notes/
 .DS_Store
+**/.obsidian
