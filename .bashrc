@@ -109,10 +109,6 @@ export AWS_REGION="us-east-1"
 export AWS_DEFAULT_PROFILE="sid"
 export GIT_EDITOR=vim
 
-
-  [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
-  chruby ruby-2.7.5
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)

@@ -224,15 +224,6 @@ set cursorline
 
 set rtp+=/usr/local/opt/fzf
 
-
-
-
-
-
-
-
-
-
 " Enable per-command history.
 " CTRL-N and CTRL-P will be automatically bound to next-history and
 " previous-history instead of down and up. If you don't like the change,
