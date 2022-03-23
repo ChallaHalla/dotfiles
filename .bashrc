@@ -98,9 +98,6 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-#this is to make sure the rbenv works
-export PATH="$HOME/.rbenv/shims:$PATH"
-
 #make sure brew works
 export PATH="/opt/homebrew/bin/:$PATH"
 
@@ -113,9 +110,9 @@ export AWS_DEFAULT_PROFILE="sid"
 export GIT_EDITOR=vim
 
 
-if [ "!$SPIN" ]; then 
   [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
   chruby ruby-2.7.5
-fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+[[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
