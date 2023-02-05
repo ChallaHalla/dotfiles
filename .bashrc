@@ -1,4 +1,4 @@
-if [ "$SPIN" ]; then                                                                                                                                                                                                                                                                                                                             
+if [ "$SPIN" ]; then 
   alias fe="cd /home/spin/src/github.com/Shopify/dovetale-frontend"
   alias web="cd /home/spin/src/github.com/Shopify/dovetale-web"
   alias api="cd /home/spin/src/github.com/Shopify/dovetale-api"
