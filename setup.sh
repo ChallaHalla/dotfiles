@@ -6,6 +6,11 @@ if [ "$SPIN" ]; then
   rm $HOME/.zshrc
 fi
 
+#scripts
+./scripts/setup_git_config.sh
+
+#link dot files using sym links
+ln -s $WORKSPACE/.gitconfig $HOME/.gitconfig
 ln -s $WORKSPACE/.vimrc $HOME/.vimrc
 ln -s $WORKSPACE/.vim $HOME/.vim
 ln -s $WORKSPACE/.bashrc $HOME/.bashrc
