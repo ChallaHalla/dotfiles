@@ -4,9 +4,9 @@ truncate -s 0 $WORKSPACE/.gitconfig
 
 #configuring gitconfig
 echo "[user]" >> $WORKSPACE/.gitconfig
-echo -e "\t name = challahalla" >> $WORKSPACE/.gitconfig
+echo "\t name = challahalla" >> $WORKSPACE/.gitconfig
 if [ "$SPIN" ]; then
-  echo -e "\t email = sid.challa@shopify.com" >>$WORKSPACE/.gitconfig
+  echo "\t email = sid.challa@shopify.com" >>$WORKSPACE/.gitconfig
 else
-  echo -e "\t email = sc5455@nyu.edu" >> $WORKSPACE/.gitconfig
+  echo "\t email = sc5455@nyu.edu" >> $WORKSPACE/.gitconfig
 fi
