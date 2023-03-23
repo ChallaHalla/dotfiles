@@ -85,6 +85,10 @@ checkout_master(){
   api
 }
 
+generate_maintenance_task(){
+  bin/rails generate maintenance_tasks:task $1
+}
+
 alias load_fixtures="RAILS_ENV=test rails db:fixtures:load"
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
