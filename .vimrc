@@ -23,8 +23,7 @@ function! Smart_TabComplete()
   elseif ( has_slash )
     return "\<C-X>\<C-F>"                         " file matching
   else
-    return "\<C-X>\<C-O>"                         " plugin matching
-  endif
+    return "\<C-X>\<C-O>"                         " plugin matching endif
 endfunction
 inoremap <leader><tab> <c-r>=Smart_TabComplete()<CR>
 
@@ -272,6 +271,12 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
+let g:vimrubocop_config = '.rubocop.yml'
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace', 'rubocop'],
+\}
+
+
 "Get Files
 command! -bang -nargs=? -complete=dir Files
     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
@@ -299,6 +304,3 @@ command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(
   \   'git grep --line-number '.shellescape(<q-args>), 0,
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
-
-
-

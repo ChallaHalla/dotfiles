@@ -1,0 +1,37 @@
+# Use the default configuration as a base
+inherit_from:
+  - .rubocop_todo.yml
+  - .rubocop_airbnb.yml
+  - .rubocop_rails.yml
+
+# Enable or disable certain cops
+AllCops:
+  DisabledByDefault: true
+  Include:
+    - '**/*.rb'
+  Exclude:
+    - 'vendor/**/*'
+  TargetRubyVersion: 3.0
+
+# Customize the behavior of individual cops
+Layout/IndentationStyle:
+  EnforcedStyle: rails
+
+Metrics/AbcSize:
+  Max: 20
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Metrics/MethodLength:
+  Max: 30
+  CountComments: false
+  IgnoreBlankLines: true
+
+# Set up custom mappings for file extensions and directories
+# This example maps the .rake extension to the ruby language
+# and the lib/tasks directory to the lib directory
+Filename:
+  - .rake:
+      - ruby
+      - lib/tasks
