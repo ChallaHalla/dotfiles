@@ -124,7 +124,7 @@ current_branch() {
   gb --show-current 2>&1
 }
 set_upstream(){
-  git branch --set-upstream-to=origin/$current_branch $current_branch
+  git branch --set-upstream-to=origin/$(current_branch) $(current_branch)
 }
 
 
