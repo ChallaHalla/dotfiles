@@ -8,6 +8,7 @@ fi
 
 #scripts
 ./scripts/setup_git_config.sh
+./scripts/setup_nvim.sh
 
 #link dot files using sym links
 ln -s $WORKSPACE/.gitconfig $HOME/.gitconfig
