@@ -1,4 +1,4 @@
-if [ "$SPIN" ]; then                                                                                                                                                                                                                                                                                                                             
+if [ "$SPIN" ]; then
   alias fe="cd /home/spin/src/github.com/Shopify/dovetale-frontend"
   alias web="cd /home/spin/src/github.com/Shopify/dovetale-web"
   alias api="cd /home/spin/src/github.com/Shopify/dovetale-api"
@@ -34,7 +34,7 @@ alias v="vim;nvm use 8"
 alias gs="git status"
 alias gb="git branch"
 alias gp="git pull"
-alias gmm="git pull origin master"
+alias gmm="git pull origin main"
 alias gpush="git push"
 alias gc="git commit"
 alias gch="git checkout"
@@ -51,11 +51,11 @@ fi
 kp(){
   port=${1:-3100}
   command=${2:-'ruby'}
-  pid=$(lsof -a -i:$port -c $command -t); 
+  pid=$(lsof -a -i:$port -c $command -t);
 
-  if [ -z $pid ]; then 
-    echo "no $command processes found on given port"; 
-  else 
+  if [ -z $pid ]; then
+    echo "no $command processes found on given port";
+  else
     echo "killing $command processes on port $port";
     kill -TERM $pid || kill -KILL $pid
   fi
@@ -69,20 +69,24 @@ src(){
   source ~/.bashrc
 }
 
-checkout_master(){
+checkout_main(){
   web
-  gch master
+  gch main
   gp
   api
-  gch master
+  gch main
   gp
   fe
-  gch master
+  gch main
   gp
   dtgem
-  gch master
+  gch main
   gp
   api
+}
+
+generate_maintenance_task(){
+  bin/rails generate maintenance_tasks:task $1
 }
 
 alias load_fixtures="RAILS_ENV=test rails db:fixtures:load"
@@ -102,12 +106,23 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/opt/homebrew/bin/:$PATH"
 
 alias sub_update="git submodule update --init --recursive"
-alias clean_merged_branches="git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d"
+alias clean_merged_branches="git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d"
 
 export PS1="\@"::$PS1
 export AWS_REGION="us-east-1"
 export AWS_DEFAULT_PROFILE="sid"
 export GIT_EDITOR=vim
+
+parse_git_branch() {
+   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+current_branch() {
+  gb --show-current 2>&1
+}
+set_upstream(){
+  git branch --set-upstream-to=origin/$(current_branch) $(current_branch)
+}
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
