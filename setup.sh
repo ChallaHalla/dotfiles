@@ -18,7 +18,7 @@ ln -s $WORKSPACE/.bashrc $HOME/.bashrc
 ln -s $WORKSPACE/.zshrc $HOME/.zshrc
 ln -s $WORKSPACE/.bash_profile $HOME/.bash_profile
 ln -s $WORKSPACE/.gitignore_global $HOME/.gitignore_global
-ln -s $WORKSPACE/.rubocop.yml $HOME/.rubocop.yml
+n -s $WORKSPACE/.rubocop.yml $HOME/.rubocop.yml
 
 git submodule update --force --recursive --init --remote
 git pull --recurse-submodules

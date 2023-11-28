@@ -1,27 +1,3 @@
- [submodule ".vim/bundle/ale"]                                                                                                                                                        
-   path = .vim/bundle/ale
-   url = https://github.com/dense-analysis/ale.git
- [submodule ".vim/bundle/nerdtree"]
-   path = .vim/bundle/nerdtree
-   url = https://github.com/preservim/nerdtree.git
- [submodule ".vim/bundle/ctrlp.vim"]
-   path = .vim/bundle/ctrlp.vim
-   url = https://github.com/kien/ctrlp.vim
- [submodule ".vim/bundle/gruvbox"]
-   path = .vim/bundle/gruvbox
-   url = https://github.com/morhetz/gruvbox.git
- [submodule ".vim/bundle/surround"]
-   path = .vim/bundle/surround
-   url = http://github.com/tpope/vim-surround
- [submodule ".vim/bundle/fzf"]
-   path = .vim/bundle/fzf
-   url = https://github.com/junegunn/fzf.git
- [submodule ".vim/bundle/fzf.vim"]
-   path = .vim/bundle/fzf.vim
-   url = https://github.com/junegunn/fzf.vim.git
- [submodule ".vim/bundle/vim-rooter.git"]
-  path = .vim/bundle/vim-rooter
-  url = https://github.com/airblade/vim-rooter.git
-[submodule ".vim/bundle/vim-solidity.git"]
-  path = .vim/bundle/vim-solidity
-  url = https://github.com/tomlion/vim-solidity.git 
+[submodule "kickstart.nvim"]
+	path = kickstart.nvim
+	url = https://github.com/ChallaHalla/kickstart.nvim.git
