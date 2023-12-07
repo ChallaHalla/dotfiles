@@ -111,7 +111,7 @@ alias clean_merged_branches="git branch --merged main | grep -v '^[ *]*main$' | 
 export PS1="\@"::$PS1
 export AWS_REGION="us-east-1"
 export AWS_DEFAULT_PROFILE="sid"
-export GIT_EDITOR=vim
+export GIT_EDITOR=nvim
 
 parse_git_branch() {
    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
