@@ -10,6 +10,16 @@ fi
 ./scripts/setup_git_config.sh
 ./scripts/setup_nvim.sh
 
+# remove existing config files
+rm $HOME/.gitconfig
+rm $HOME/.vimrc
+rm $HOME/.vim
+rm $HOME/.bashrc
+rm $HOME/.zshrc
+rm $HOME/.bash_profile
+rm $HOME/.gitignore_global
+rm $HOME/.rubocop.yml
+
 #link dot files using sym links
 ln -s $WORKSPACE/.gitconfig $HOME/.gitconfig
 ln -s $WORKSPACE/.vimrc $HOME/.vimrc
