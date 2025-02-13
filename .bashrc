@@ -124,6 +124,11 @@ set_upstream(){
   git branch --set-upstream-to=origin/$(current_branch) $(current_branch)
 }
 
+git_changed_files() {
+  git status --short | fzf --ansi --no-sort +m | awk '{print $2}'
+}
+alias gcf=git_changed_files
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
