@@ -38,7 +38,3 @@ The setup script will:
 ## Contributing
 
 Feel free to fork this repository and customize it for your own use. If you have any improvements or suggestions, pull requests are welcome!
-
-## License
-
-This project is open source and available under the MIT License.
