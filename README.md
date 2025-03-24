@@ -19,19 +19,21 @@ My personal dotfiles configuration for a productive development environment.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/ChallaHalla/dotfiles.git ~/.dotfiles
+   git clone https://github.com/ChallaHalla/dotfiles.git ~/dotfiles
+   cd ~/dotfiles
    ```
 
-2. Create symbolic links:
+2. Run the setup script:
    ```bash
-   ln -s ~/.dotfiles/.bashrc ~/.bashrc
-   ln -s ~/.dotfiles/.vimrc ~/.vimrc
+   ./setup.sh
    ```
 
-3. Reload your shell:
-   ```bash
-   source ~/.bashrc
-   ```
+The setup script will:
+- Configure git and neovim
+- Remove any existing config files
+- Create symbolic links for all dotfiles
+- Initialize and update git submodules
+- Handle special cases for Spin environments
 
 ## Contributing
 
