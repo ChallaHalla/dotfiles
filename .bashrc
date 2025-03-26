@@ -1,27 +1,6 @@
-if [ "$SPIN" ]; then
-  alias fe="cd /home/spin/src/github.com/Shopify/dovetale-frontend"
-  alias web="cd /home/spin/src/github.com/Shopify/dovetale-web"
-  alias api="cd /home/spin/src/github.com/Shopify/dovetale-api"
-  alias cli="cd /home/spin/src/github.com/Shopify/dovetale-cli"
-  alias dtgem="cd /home/spin/src/github.com/Shopify/dt"
-  alias tenon="cd /home/spin/src/github.com/Shopify/dt"
-else
-  alias web="cd /Users/siddarthchalla/repos/dt_repos/web"
-  alias api="cd /Users/siddarthchalla/repos/dt_repos/api"
-  alias fe="cd /Users/siddarthchalla/repos/dt_repos/frontend"
-  alias cli="cd /Users/siddarthchalla/repos/dt_repos/dt-cli"
-  alias dtgem="cd /Users/siddarthchalla/repos/dt_repos/dt"
-  alias tenon="cd /Users/siddarthchalla/repos/tenon"
-
-  alias mig="cd /Users/siddarthchalla/Desktop/coding_projects/migrations"
-  alias migration="cd /Users/siddarthchalla/Desktop/coding_projects/migrations"
-  alias migrations="cd /Users/siddarthchalla/Desktop/coding_projects/migrations"
-
-  alias community="cd /Users/siddarthchalla/Desktop/coding_projects/dt_repos/community"
-  alias pizza="cd /Users/siddarthchalla/Desktop/coding_projects/other/free-pizza-rails"
-  alias code="cd /Users/siddarthchalla/Desktop/coding_projects"
-  alias shopify="cd /Users/siddarthchalla/Desktop/coding_projects/shopify"
-fi
+alias fe="cd /home/spin/src/github.com/Shopify/dovetale-frontend"
+alias fe="cd /home/spin/src/github.com/Shopify/creators"
+alias api="cd /home/spin/src/github.com/Shopify/dovetale-api"
 
 alias wp="cd ~/dotfiles"
 
