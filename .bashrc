@@ -1,6 +1,6 @@
-alias fe="cd /home/spin/src/github.com/Shopify/dovetale-frontend"
-alias fe="cd /home/spin/src/github.com/Shopify/creators"
-alias api="cd /home/spin/src/github.com/Shopify/dovetale-api"
+alias fe="cd ~/src/github.com/Shopify/dovetale-frontend"
+alias fe="cd ~/src/github.com/Shopify/creators"
+alias api="cd ~/src/github.com/Shopify/dovetale-api"
 
 alias wp="cd ~/dotfiles"
 
