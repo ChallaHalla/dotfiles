@@ -1,7 +1,9 @@
-alias fe="cd ~/src/github.com/Shopify/dovetale-frontend"
-alias fe="cd ~/src/github.com/Shopify/creators"
-alias api="cd ~/src/github.com/Shopify/dovetale-api"
+alias creators="dev cd creators"
+alias fe="dev cd dovetale-frontend"
+alias api="dev cd dovetale-api"
+alias indexer="cd ~/ruby_indexer"
 
+alias vim="nvim"
 alias wp="cd ~/dotfiles"
 
 alias bp="vim ~/.bash_profile"
@@ -116,3 +118,4 @@ alias gcf=git_changed_files
 
 # cloudplatform: add Shopify clusters to your local kubernetes config
 export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/siddarthchalla/.kube/config:/Users/siddarthchalla/.kube/config.shopify.cloudplatform
+. "$HOME/.cargo/env"
