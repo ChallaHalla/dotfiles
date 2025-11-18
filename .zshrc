@@ -8,3 +8,5 @@ fi
 
 # cloudplatform: add Shopify clusters to your local kubernetes config
 export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/siddarthchalla/.kube/config:/Users/siddarthchalla/.kube/config.shopify.cloudplatform
+
+[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
